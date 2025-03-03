@@ -25,11 +25,11 @@ namespace Content.Client.Lobby.UI
             LeaveButton.OnPressed += _ => _consoleHost.ExecuteCommand("disconnect");
             OptionsButton.OnPressed += _ => UserInterfaceManager.GetUIController<OptionsUIController>().ToggleWindow();
 
-            Wiki.OnPressed += _ => _uriOpener.OpenUri(new Uri("https://wiki.deadspace14.net"));
-            Boosty.OnPressed += _ => _uriOpener.OpenUri(new Uri("https://boosty.to/deadstation14"));
-            Discord.OnPressed += _ => _uriOpener.OpenUri(new Uri("https://discord.gg/ds14"));
-            Telegram.OnPressed += _ => _uriOpener.OpenUri(new Uri("https://t.me/mk_ss14"));
-            Site.OnPressed += _ => _uriOpener.OpenUri(new Uri("https://deadspace14.net"));
+            Wiki.OnPressed += _ => _uriOpener.OpenUri(new Uri(""));
+            Boosty.OnPressed += _ => _uriOpener.OpenUri(new Uri(""));
+            Discord.OnPressed += _ => _uriOpener.OpenUri(new Uri(""));
+            Telegram.OnPressed += _ => _uriOpener.OpenUri(new Uri(""));
+            Site.OnPressed += _ => _uriOpener.OpenUri(new Uri(""));
 
             Rules.OnPressed += _ => new RulesAndInfoWindow().Open();
             Guidebook.OnPressed += _ => UserInterfaceManager.GetUIController<GuidebookUIController>().ToggleGuidebook();
